@@ -21,10 +21,10 @@ def read_instances(train_file, test_file):
     testI = []
     for line in open(train_file):
         tokens = line.strip().split()
-        #if float(tokens[2]) >= 3:
-        trainI.append((int(tokens[0]) -1 , int(tokens[1]) -1, 1))
+        if float(tokens[2]) >= 3:
+            trainI.append((int(tokens[0]) -1 , int(tokens[1]) -1, 1))
     for line in open(test_file):
         tokens = line.strip().split()
-        #if float(tokens[2]) >= 3:
-        testI.append((int(tokens[0]) - 1, int(tokens[1]) - 1, 1))
+        if float(tokens[2]) >= 3:
+            testI.append((int(tokens[0]) - 1, int(tokens[1]) - 1, 1))
     return trainI, testI
