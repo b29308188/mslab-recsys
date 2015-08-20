@@ -55,8 +55,6 @@ if __name__=='__main__':
     #print evals.precision_recall_atK(5 , P, X, testX)
     #print evals.precision_recall_atK(10 , P, X, testX)
     #print evals.precision_recall_atK(20 , P, X, testX)
-
- 
     print evals.MAP_MRR_atK(5 , P, X, testX)
     print evals.MAP_MRR_atK(10 , P, X, testX)
     print evals.MAP_MRR_atK(20 , P, X, testX)
